@@ -17,11 +17,14 @@
 
 .list {
   list-style: none;
-  width: 100%;
+  display: block;
+  min-width: 200px;
 }
 
 .item {
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  max-width: 500px;
 }
