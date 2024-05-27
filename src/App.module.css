@@ -1,0 +1,5 @@
+.box {
+  display: flex;
+  gap: 32px;
+  height: 100vh;
+}
