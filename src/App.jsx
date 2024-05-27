@@ -11,7 +11,7 @@ function App() {
     (recipe) => recipe.id === selectedRecipeId
   );
 
-  const { name, ingredients, description, img } = selectedRecipe;
+  const { name, ingredients, description, img, country } = selectedRecipe;
   // dzieki temu zapisowi nie musimy pisac w Cookbook name={selectRecipe.name}
 
   console.log(selectedRecipe);
@@ -27,6 +27,7 @@ function App() {
         />
         <Cookbook
           name={name}
+          country={country}
           ingredients={ingredients}
           description={description}
           img={img}
