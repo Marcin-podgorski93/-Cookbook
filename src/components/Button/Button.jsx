@@ -1,8 +1,11 @@
 import styles from "./Button.module.css";
 
-export function Button({ children, onClick }) {
+export function Button({ active, children, onClick }) {
   return (
-    <button onClick={onClick} className={styles.button}>
+    <button
+      onClick={onClick}
+      className={`${styles.button} ${active ? styles.active : ""}`}
+    >
       {children}
     </button>
   );
