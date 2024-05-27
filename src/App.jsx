@@ -12,6 +12,10 @@ function App() {
   );
 
   const { name, ingredients, description, img } = selectedRecipe;
+  // dzieki temu zapisowi nie musimy pisac w Cookbook name={selectRecipe.name}
+
+  console.log(selectedRecipe);
+  console.log(selectedRecipeId);
 
   return (
     <>
@@ -19,6 +23,7 @@ function App() {
         <List
           recipes={recipes}
           onSelectRecipe={(id) => setSelectedRecipeId(id)}
+          selectedRecipeId={selectedRecipeId}
         />
         <Cookbook
           name={name}
